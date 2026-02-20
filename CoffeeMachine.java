@@ -68,6 +68,7 @@ public class CoffeeMachine {
         } else {
             System.out.println("Option not implemented yet.");
         }
+        System.out.println("made by: EgorTVman1");
     }
     
 }
