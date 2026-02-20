@@ -15,11 +15,12 @@ public class CoffeeMachine {
 
         if (mainChoice.equals("1")) {
             System.out.println("--- MENU ---");
-            System.out.println("coca cola = 9.99");
-            System.out.println("pepsi = 7.49");
-            System.out.println("dr. pepper = 5.99");
-            System.out.println("fanta = 6.67");
-            System.out.println("sprite = 5.49");
+            Product cola = new Product("coca cola", 9.99);
+            Product cola = new Product("pepsi", 7.49);
+            Product cola = new Product("dr. pepper", 5.99);
+            Product cola = new Product("fanta", 6.67);
+            Product cola = new Product("sprite", 5.49);
+
 
             System.out.println("What do you want to buy? (Write the name):");
             String megaknight = scanner.nextLine();
