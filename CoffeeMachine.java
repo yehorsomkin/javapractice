@@ -16,16 +16,52 @@ public class CoffeeMachine {
         if (mainChoice.equals("1")) {
             System.out.println("--- MENU ---");
             Product cola = new Product("coca cola", 9.99);
-            Product cola = new Product("pepsi", 7.49);
-            Product cola = new Product("dr. pepper", 5.99);
-            Product cola = new Product("fanta", 6.67);
-            Product cola = new Product("sprite", 5.49);
-
+            Product pepsi = new Product("pepsi", 7.49);
+            Product drpepper = new Product("dr. pepper", 5.99);
+            Product fanta = new Product("fanta", 6.67);
+            Product sprite = new Product("sprite", 5.49);
+            cola.printInfo();
+            pepsi.printInfo();
+            drpepper.printInfo();
+            fanta.printInfo();
+            sprite.printInfo();
 
             System.out.println("What do you want to buy? (Write the name):");
             String megaknight = scanner.nextLine();
             String cleanChoice = megaknight.toLowerCase();
-
+           if (cleanChoice.equals("coca cola")) {
+                    System.out.println("You chose Coca Cola ");
+                    System.out.println("cash:" + cash );
+                    cash -= 9.99;
+                    System.out.printf("%.2f" , cash );
+           }
+           else if (cleanChoice.equals("pepsi")) {
+                    System.out.println("You chose Pepsi ");
+                    System.out.println("cash:" + cash );
+                    cash -= 7.49;
+                    System.out.printf("%.2f" , cash );
+           }
+           else if (cleanChoice.equals("dr pepper")) {
+            System.out.println("cash:" + cash );
+                    cash -= 5.99;
+                    System.out.printf("%.2f" , cash );
+           }
+           else if (cleanChoice.equals("fanta")) {
+            System.out.println("You chose Fanta ");
+                    System.out.println("cash:" + cash );
+                    cash -= 6.67;
+                    System.out.printf("%.2f" , cash );
+           }
+           else if (cleanChoice.equals("sprite")) {
+            System.out.println("You chose Sprite ");
+                    System.out.println("cash:" + cash );
+                    cash -= 5.49;
+                    System.out.printf("%.2f" , cash );
+           }
+           else {
+            System.out.println("bro we dont have that drink");
+           }
+      /*
             switch (cleanChoice) {
                 case "coca cola":
                     System.out.println("You chose Coca Cola ");
@@ -65,7 +101,7 @@ public class CoffeeMachine {
                 default:
                     System.out.println("We don't have this drink!");
                     break;
-            }
+            } */
         } else {
             System.out.println("Option not implemented yet.");
         }
